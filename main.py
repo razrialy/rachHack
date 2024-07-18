@@ -55,7 +55,7 @@ button_2_python.onclick = way_2_print #calls function 'way_2_print' when button 
 '''
 def b3(event):
     global my_strings #gets my my_strings array
-    print('"',string 1 + string2, '" loaded into my_strings array')
+    print('"',string1 + string2, '" loaded into my_strings array')
 
 #linking
 button_3_python = document.getElementById('my_button3_id') #gets button from html
