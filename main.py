@@ -1,5 +1,6 @@
 from pyscript import document, window, when
-print("Hello, World!")
+print("Hello, World")
+print("Testing")
 
 
 '''
