@@ -27,7 +27,7 @@ my_strings = [None, None]
 @when("click", "#my_button1_id")
 async def way_1_print(event): 
     global my_strings #gets my my_strings array
-    string1 = "FOOT"
+    string1 = "RACE"
     my_strings[0] = string1 #storing string 1 in array
     print('"',string1, '" loaded into my_strings array')
 
@@ -41,7 +41,7 @@ async def way_1_print(event):
 '''
 def way_2_print(event):
     global my_strings #gets my my_strings array
-    string2 = "BALL"
+    string2 = "CAR"
     my_strings[1] = string2 #storing string 2 in array
     print('"',string2, '" loaded into my_strings array')
 
@@ -55,7 +55,7 @@ button_2_python.onclick = way_2_print #calls function 'way_2_print' when button 
 '''
 def b3(event):
     global my_strings #gets my my_strings array
-    print('"',string1 + string2, '" loaded into my_strings array')
+    print('"',my_strings[0] + my_strings[1], '" loaded into my_strings array')
 
 #linking
 button_3_python = document.getElementById('my_button3_id') #gets button from html
